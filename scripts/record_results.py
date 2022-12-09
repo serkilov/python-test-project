@@ -1,5 +1,6 @@
 import json
 import os
+import shutil
 import sqlite3
 from datetime import datetime
 
@@ -72,3 +73,6 @@ for file in os.listdir(reports_path):
 
 insert_results([(run_id, passed, failed, skipped)])
 get_results("results")
+
+# Clean up reports
+shutil.rmtree(reports_path)
