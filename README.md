@@ -5,3 +5,6 @@
    * `pytest --alluredir=./tests/reports -s`
 4. Запись в БД
    * `python ./scripts/record_results.py`
+
+* Known issues:
+  - Search API не возвращает ожидаемый результат 
